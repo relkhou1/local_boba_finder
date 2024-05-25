@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .cup {
+            position: absolute;
+            border-bottom: 900px solid rgba(219, 199, 179, 1);
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            height: 20px;
+            width: 750px;
+            rotate: 180deg;
+            margin: auto;
+            top: 180px;
+            padding-bottom: 40px;
+        }
+        
+        .cup_top {
+            position: absolute;
+            top: 180px;
+            border-bottom: 25px solid rgba(255, 172, 172, 1);
+            width: 850px;
+            rotate: 180deg;
+            margin: auto;
+        }
+        
+        .straw {
+            position: absolute;
+            border-bottom: 60px solid rgba(253, 251, 213, 1);
+            width: 1100px;
+            rotate: 96.03deg;
+            top: 490px;
+            
+        }
+        
+        .boba_cup { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+           
+        } 
+        
+        .title {
+            position: absolute;
+            font-size: 60px;
+            top: 100px;
+            text-align:center;
+            margin: auto;
+            color: rgba(93, 74, 74, 1);
+        }
+        
+        .description {
+            position: absolute;
+            font-size: 25px;
+            top: 210px;
+            text-align: center;
+            margin: auto;
+            color: rgba(93, 74, 74, 1);
+        }
+
+        .button {
+           border: none;
+           padding: 40px;
+           display: inline-block;
+           border-radius: 100%;
+        }
+        .button1 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 920px;
+        }
+        .button2 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 940px;
+            left: 300px;
+        }
+        .button3 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 990px;
+            left: 870px;
+        }
+        .button4 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 820px;
+            left: 900px;
+        }
+        .button5 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 890px;
+            left: 750px;
+        }
+        .button6 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 990px;
+            left: 470px;
+        }
+        .button7 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 800px;
+            left: 540px;
+        }
+        .button8 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 820px;
+            left: 310px;
+        }
+        .button9 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 980px;
+            left: 720px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 30;
+            width: 100%;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            padding: 10px;
+            width: 500px;
+            left: 40%;
+            margin-left: -150px;
+            height: 500px;
+            top: 20%;
+            margin-top: -100px;
+            border: 5px solid rgba(111, 82, 82, 1);
+            z-index: 500;
+        }
+
+        #popup:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: rgba(219, 199, 179, 1);
+          z-index: -1;
+        }
+        
+        .popuptitle {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(93, 74, 74, 1);
+            left: 200px;
+            top: 5px;
+        }
+
+        .popupstore {
+            position: absolute;
+            font-size: 35px;
+            color: rgba(93, 74, 74, 1);
+            top: 30px;
+            left: 140px;
+        }
+        .exit {
+            position: absolute;
+            border: none;
+            background: rgba(219, 199, 179, 1);
+            color: rgba(93, 74, 74, 1);
+            top: 0px;
+            right: 10px;
+            font-size: 40px;
+        }
+        
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    <title>My App</title>
+</head>
+<body style = "background-color:rgba(255, 255, 248, 1)">
+    <div class="container">
+        <div class = "boba_cup">
+            <div class = "cup"></div>
+            <div class = "straw"></div>
+            <div class = "cup_top"></div>
+            <p class = "title"> Bubble Popper</p>
+            <p class = "description" id = "myHeader"> Pop a Boba, Find a Store</p>
+            <button class="button button1" onclick="show('popup')"><span class="popuptext" id="myPopup"></span></button>
+            <button class="button button2" onclick="show('popup')"></button>
+            <button class="button button3" onclick="show('popup')"></button>
+            <button class="button button4" onclick="show('popup')"></button>
+            <button class="button button5" onclick="show('popup')"></button>
+            <button class="button button6" onclick="show('popup')"></button>
+            <button class="button button7" onclick="show('popup')" ></button>
+            <button class="button button8" onclick="show('popup')"></button>
+            <button class="button button9" onclick="show('popup')"></button>
+        </div>
+        <div class="popup" id="popup">
+            <p class="popuptitle">You popped for:</p>
+            <p class="popupstore">Store Name Here</p>
+            
+            <button class="exit" href="#" onclick="hide('popup')">x</button>
+          </div>
+    </div>
+    <script> window.onscroll = function() {scroller()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function scroller() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+
+        $ = function(id) {
+  return document.getElementById(id);
+}
+
+var show = function(id) {
+	$(id).style.display ='block';
+}
+var hide = function(id) {
+	$(id).style.display ='none';
+}
+        </script>
+</body>
+</html>
