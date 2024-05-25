@@ -1,0 +1,177 @@
+
+        .cup {
+            position: absolute;
+            border-bottom: 900px solid rgba(219, 199, 179, 1);
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            height: 20px;
+            width: 750px;
+            rotate: 180deg;
+            margin: auto;
+            top: 180px;
+            padding-bottom: 40px;
+        }
+        
+        .cup_top {
+            position: absolute;
+            top: 180px;
+            border-bottom: 25px solid rgba(255, 172, 172, 1);
+            width: 850px;
+            rotate: 180deg;
+            margin: auto;
+        }
+        
+        .straw {
+            position: absolute;
+            border-bottom: 60px solid rgba(253, 251, 213, 1);
+            width: 1100px;
+            rotate: 96.03deg;
+            top: 490px;
+            
+        }
+        
+        .boba_cup { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+           
+        } 
+        
+        .title {
+            position: absolute;
+            font-size: 60px;
+            top: 100px;
+            text-align:center;
+            margin: auto;
+            color: rgba(93, 74, 74, 1);
+        }
+        
+        .description {
+            position: absolute;
+            font-size: 25px;
+            top: 220px;
+            text-align: center;
+            margin: auto;
+            color: rgba(93, 74, 74, 1);
+        }
+
+        .button {
+           border: none;
+           padding: 40px;
+           display: inline-block;
+           border-radius: 100%;
+        }
+        .button1 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 920px;
+        }
+        .button2 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 940px;
+            left: 300px;
+        }
+        .button3 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 990px;
+            left: 870px;
+        }
+        .button4 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 820px;
+            left: 900px;
+        }
+        .button5 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 890px;
+            left: 750px;
+        }
+        .button6 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 990px;
+            left: 470px;
+        }
+        .button7 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 800px;
+            left: 540px;
+        }
+        .button8 {
+            background-color: rgba(111, 82, 82, 1);
+            position: absolute;
+            top: 820px;
+            left: 310px;
+        }
+        .button9 {
+            background-color: rgba(151, 128, 128, 1);
+            position: absolute;
+            top: 980px;
+            left: 720px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 30;
+            width: 100%;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            padding: 10px;
+            width: 500px;
+            left: 40%;
+            margin-left: -150px;
+            height: 500px;
+            top: 20%;
+            margin-top: -100px;
+            border: 5px solid rgba(111, 82, 82, 1);
+            z-index: 500;
+        }
+
+        #popup:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: rgba(219, 199, 179, 1);
+          z-index: -1;
+        }
+        
+        .popuptitle {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(93, 74, 74, 1);
+            left: 200px;
+            top: 5px;
+        }
+
+        .popupstore {
+            font-size: 35px;
+            color: rgba(93, 74, 74, 1);
+            text-align: center;
+            margin-top: 50px;
+        }
+        .exit {
+            position: absolute;
+            border: none;
+            background: rgba(219, 199, 179, 1);
+            color: rgba(93, 74, 74, 1);
+            top: 0px;
+            right: 10px;
+            font-size: 40px;
+        }
+        
