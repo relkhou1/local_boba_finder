@@ -73,3 +73,4 @@ function buttonControl(bool) {
 		buttons[i].disabled = bool;
 	}
 }
+
