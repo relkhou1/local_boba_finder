@@ -30,16 +30,16 @@ console.log(randomProp(bobaDictionary))
 
 window.onscroll = function() {scroller()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function scroller() {
-  if (window.pageOffset > sticky) {
-	header.classList.add("sticky");
-  } else {
-	header.classList.remove("sticky");
-  }
-}
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function scroller() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
 
 $ = function(id) {
 return document.getElementById(id);
@@ -73,4 +73,3 @@ function buttonControl(bool) {
 		buttons[i].disabled = bool;
 	}
 }
-
