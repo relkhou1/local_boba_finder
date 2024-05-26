@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css"></head>
+    <title>Bubble Popper</title>
+</head>
+<body onload="javascript:flavors(teaColors)"></body>
+<body style = "background-color:rgba(255, 255, 248, 1)">
+    <div class="container">
+        <div class = "boba_cup">
+            <div class = "cup" id="replacetea"></div>
+            <div class = "straw"></div>
+            <div class = "cup_top"></div>
+            <p class = "title"> Bubble Popper</p>
+            <p class = "description" id = "myHeader"> Pop a Boba, Find a Store</p>
+            <button class="button button1" onclick="showpopup()"><span class="popuptext" id="myPopup"></span></button>
+            <button class="button button2" onclick="showpopup()"></button> 
+            <button class="button button3" onclick="showpopup()"></button>
+            <button class="button button4" onclick="showpopup()"></button>
+            <button class="button button5" onclick="showpopup()"></button>
+            <button class="button button6" onclick="showpopup()"></button> 
+            <button class="button button7" onclick="showpopup()"></button>
+            <button class="button button8" onclick="showpopup()"></button>
+            <button class="button button9" onclick="showpopup()"></button>
+        </div>
+        <div class="popup" id="popup">
+            <p class="popuptitle">You popped for:</p>
+            <p class="popupstore" id="replace-me"> temp </p>
+            <iframe id="map" width="450" height="380" style="border:0; position:relative; left:25px; bottom:15px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button class="exit" id="exit" href="#" onclick="hide('popup')">x</button>
+          </div>
+    </div>
+    <script src = "random_boba_place.js"></script>
+</body>
+</html>
