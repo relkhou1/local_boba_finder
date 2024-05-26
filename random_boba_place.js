@@ -26,6 +26,17 @@ let randomProp = function (object) {
 	return object[keys[picked]] // randomly picks the index of or number for a boba place in the object dictionary
 }
 
+const teaColors = ["rgba(219, 199, 179, 1)", "rgba(238, 219, 253, 1)", "rgba(255, 216, 177, 1)", "rgba(212, 241, 209, 1)"];
+let flavors = function(object) {
+	let picked = teaColors[Math.floor(teaColors.length * Math.random())];
+	document.getElementById('replacetea').style.borderBottomColor = picked;
+	document.getElementById('exit').style.background = picked;
+	var info = document.head.appendChild(document.createElement("style"));
+	info.innerHTML = "#popup:before {background: " + picked + ";}";
+}
+
+
+
 console.log(randomProp(bobaDictionary))
 
 window.onscroll = function() {scroller()};

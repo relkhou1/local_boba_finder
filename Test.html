@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css"></head>
     <title>Bubble Popper</title>
 </head>
+<body onload="javascript:flavors(teaColors)"></body>
 <body style = "background-color:rgba(255, 255, 248, 1)">
     <div class="container">
         <div class = "boba_cup">
-            <div class = "cup"></div>
+            <div class = "cup" id="replacetea"></div>
             <div class = "straw"></div>
             <div class = "cup_top"></div>
             <p class = "title"> Bubble Popper</p>
@@ -29,7 +30,7 @@
             <p class="popuptitle">You popped for:</p>
             <p class="popupstore" id="replace-me"> temp </p>
             <iframe id="map" width="450" height="380" style="border:0; position:relative; left:25px; bottom:15px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <button class="exit" href="#" onclick="hide('popup')">x</button>
+            <button class="exit" id="exit" href="#" onclick="hide('popup')">x</button>
           </div>
     </div>
     <script src = "random_boba_place.js"></script>
